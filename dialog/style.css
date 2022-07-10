@@ -1,0 +1,122 @@
+.Container{
+   
+    position: fixed;
+    max-width: 100%;
+    background-color: 
+    #131720;
+    border-radius: 15px;
+    height: 40%;
+    width: 20%;
+width: 30%;
+min-width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: solid white 2px;
+    
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,-50%) scale(0);
+    transition:  200ms ease-in-out;
+  z-index: 10;
+  
+}
+.Container.active{
+    transform:  translate(-50%,-50%) scale(1);
+
+}
+.bcg{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  
+    transform:  translate(-50%,-50%) ;
+    background-color: rgba(0,0,0,0.5);
+    transition:  200ms ease-in-out;
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+}
+.bcg.active{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+
+#parentContainer{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+   
+    
+   
+    
+}
+
+#Section1D{
+    flex:3;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#text-field{
+    background: transparent;
+	border: none;
+	height: 35px;
+	color: rgba(255,255,255,1) !important;
+	border: 1px solid transparent;
+	background: rgb(201, 201, 201);
+	border-radius: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+input
+{
+    color: #131720;
+}
+#form{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+#Section2D{
+    width: 100%;
+
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+body{
+    height: 100vh;
+    padding:0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+
+
+
+#ButtonSubmit{
+    width: 40%;
+    background-color: white;
+    border-radius: 15px;
+    border-color: transparent;
+}
